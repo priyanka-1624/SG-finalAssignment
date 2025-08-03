@@ -5,6 +5,9 @@ on:
     workflows: ["CI - Build and Push Docker"]
     types:
       - completed
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   deploy-staging:

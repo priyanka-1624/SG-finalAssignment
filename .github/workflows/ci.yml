@@ -26,7 +26,7 @@ jobs:
     - name: Run Tests
       run: |
         echo "Run unit and integration tests here"
-        dotnet test
+        dotnet test ./webapp/JobPortel.csproj
 
     - name: Build and Push Docker Image
       uses: docker/build-push-action@v5
